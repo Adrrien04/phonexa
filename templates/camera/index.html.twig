@@ -20,7 +20,7 @@
         let stream;
 
         startBtn.addEventListener('click', function () {
-
+            // Démarrer la caméra
             navigator.mediaDevices.getUserMedia({ video: true })
                 .then(function (videoStream) {
                     stream = videoStream;
@@ -32,7 +32,7 @@
         });
 
         stopBtn.addEventListener('click', function () {
-
+            // Arrêter la caméra
             if (stream) {
                 const tracks = stream.getTracks();
                 tracks.forEach(track => track.stop());
