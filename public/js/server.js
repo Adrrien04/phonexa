@@ -9,18 +9,21 @@ const io = socketIO(server);
 app.use(express.static(__dirname + '/public'));
 
 io.on('connection', function (socket) {
-    console.log('User connected:', socket.id);
+    console.log('User connected');
 
     socket.on('disconnect', function () {
-        console.log('User disconnected:', socket.id);
+        console.log('User disconnected');
     });
 
     socket.on('signal', function (data) {
-        console.log('Signal received from', socket.id, data);
         io.emit('signal', data);
     });
-});
 
+    // Ajout de la réception des messages du chat
+    socket.on('chat message', function (message) {
+        io.emit('chat message', message);
+    });
+});
 
 const port = process.env.PORT || 3000;
 server.listen(port, function () {

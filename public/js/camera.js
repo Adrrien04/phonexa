@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const remoteVideo = document.getElementById('remoteVideo');
     const startBtn = document.getElementById('startBtn');
     const stopBtn = document.getElementById('stopBtn');
+    const chatForm = document.getElementById('chatForm');
+    const messageInput = document.getElementById('m');
+    const messagesList = document.getElementById('messages'); // Ajout de cette ligne
 
     let localStream, remoteStream;
     let localPeer, socket;
@@ -13,8 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 localStream = stream;
                 localVideo.srcObject = stream;
 
-                // Utiliser io() au lieu de io.connect()
-                socket = io('https://sure-tough-snail.ngrok-free.app/');
+                socket = io.connect('https://sure-tough-snail.ngrok-free.app/');
 
                 socket.on('connect', function () {
                     console.log('Connected to server');
@@ -42,6 +44,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    chatForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const message = messageInput.value;
+        sendMessage(message);
+    });
+
+    function sendMessage(message) {
+        socket.emit('chat message', message);
+        messageInput.value = '';
+    }
+
     function initPeer() {
         localPeer = new SimplePeer({ initiator: true, trickle: false, stream: localStream });
 
@@ -61,6 +74,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 remoteVideo.srcObject = null;
             }
             remoteStream = null;
+        });
+
+        // Ajout de la réception des messages du chat
+        socket.on('chat message', function (message) {
+            const listItem = document.createElement('li');
+            listItem.textContent = message;
+            messagesList.appendChild(listItem);
         });
     }
 });
