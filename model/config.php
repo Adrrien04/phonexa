@@ -1,11 +1,13 @@
 <?php
-  $hostname = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "phonexa";
+$host = "localhost";
+$port = "5433";
+$dbname = "phonexa";
+$user = "postgres";
+$password = "root";
 
-  $conn = mysqli_connect($hostname, $username, $password, $dbname);
-  if(!$conn){
-    echo "Database connection error".mysqli_connect_error();
-  }
+$conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
+
+if(!$conn){
+  echo "Database connection error" . pg_last_error();
+}
 ?>
