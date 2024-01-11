@@ -10,4 +10,5 @@
 
   $page = isset($_GET['page']) ? $_GET['page'] : 'accueil';
   getPageContent($page);
+include_once 'view/footer.php';
 ?>
