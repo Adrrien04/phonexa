@@ -1,7 +1,0 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
-
-camera_page:
-  path: /camera
-  controller: App\Controller\CameraController::index

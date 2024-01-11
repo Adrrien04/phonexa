@@ -6,9 +6,9 @@ if (isset($_SESSION['unique_id'])) {
 
     if (isset($_GET['logout_id'])) {
         $status = "Déconnecté";
-        $logout_id = mysqli_real_escape_string($conn, $_GET['logout_id']);
-        
-        $sql = mysqli_query($conn, "UPDATE users SET status = '{$status}' WHERE unique_id = {$logout_id}");
+        $logout_id = pg_escape_string($conn, $_GET['logout_id']);
+
+        $sql = pg_query_params($conn, "UPDATE users SET status = $1 WHERE unique_id = $2", array($status, $logout_id));
 
         if ($sql) {
             session_unset();
