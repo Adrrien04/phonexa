@@ -3,7 +3,7 @@
 
 <div class="wrapper">
     <section class="form signup">
-      <h1>P H O N E X A</h1>
+      <header>    <img src="../model/images/phonexanoir.png" alt="Logo de Phonexa"></header>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="name-details">
