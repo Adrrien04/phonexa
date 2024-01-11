@@ -32,7 +32,7 @@ wrapper {
     0 32px 64px -48px rgba(0, 0, 0, 0.5);
 }
 
-/* Login & Signup Form CSS Start */
+
 .form {
   padding: 25px 30px;
   border-radius: 16px;
@@ -142,9 +142,11 @@ wrapper {
 }
 
 
-/* Users List CSS Start */
 .users {
   padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+  0 32px 64px -48px rgba(0, 0, 0, 0.5);
 }
 
 .users header,
@@ -249,12 +251,14 @@ wrapper {
 }
 
 .users-list {
-  max-height: 350px;
+  max-height: auto;
   overflow-y: auto;
+  width: auto;
 }
 
 :is(.users-list, .chat-box)::-webkit-scrollbar {
   width: 0px;
+
 }
 
 .users-list a {
@@ -269,13 +273,17 @@ wrapper {
   border-bottom: none;
 }
 
+
 .users-list a img {
   height: 40px;
   width: 40px;
+
 }
+
 
 .users-list a .details p {
   color: #67676a;
+
 }
 
 .users-list a .status-dot {
@@ -288,7 +296,7 @@ wrapper {
   color: #ccc;
 }
 
-/* Chat Area CSS Start */
+
 .chat-area header {
   display: flex;
   align-items: center;
@@ -317,9 +325,10 @@ wrapper {
   max-height: 500px;
   overflow-y: auto;
   padding: 10px 30px 20px 30px;
-  background: #fff; /* Changement de couleur de fond à blanc */
-  box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
-    inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+  0 32px 64px -48px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -340,7 +349,7 @@ wrapper {
   word-wrap: break-word;
   padding: 8px 16px;
   box-shadow: 0 0 32px rgb(0 0 0 / 8%),
-    0rem 16px 16px -16px rgb(0 0 0 / 10%);
+  0rem 16px 16px -16px rgb(0 0 0 / 10%);
 }
 
 .chat-box .outgoing {
@@ -415,7 +424,6 @@ wrapper {
   pointer-events: auto;
 }
 
-/* Responive media query */
 @media screen and (max-width: 450px) {
 
   .form,
@@ -462,7 +470,7 @@ wrapper {
   }
 
   .chat-box {
-    min-height: 400px;
+    min-height: 1000px;
     padding: 10px 15px 15px 20px;
   }
 
@@ -497,8 +505,7 @@ wrapper {
   }
 }
 
-/* Ajoutez ces styles pour harmoniser le header avec le formulaire */
-/* Ajoutez ces styles à votre fichier CSS */
+
 .main-header {
   background-color: #333;
   color: #fff;
@@ -506,23 +513,20 @@ wrapper {
   text-align: center;
 }
 
-/* Si vous voulez ajuster la taille du texte dans le header */
 .main-header h1 {
   font-size: 24px;
   margin: 0;
 }
 
-/* Si vous voulez styliser les liens dans la navigation */
+
 .main-header nav ul {
   list-style: none;
-  /* Supprime les puces de la liste */
   margin: 0;
   padding: 0;
 }
 
 .main-header nav ul li {
   display: inline;
-  /* Affiche les éléments en ligne */
   margin-right: 10px;
 }
 
@@ -531,6 +535,3 @@ wrapper {
   text-decoration: none;
   padding: 10px;
 }
-
-/* Ajoutez des styles supplémentaires selon vos besoins */
-/* Ajoutez des styles supplémentaires selon vos besoins */

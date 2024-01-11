@@ -20,7 +20,7 @@
                 <input type="submit" name="submit" value="Continuer vers la discussion">
             </div>
         </form>
-        <div class="link">Pas encore inscrit ? <a href="index.php">Inscrivez-vous maintenant</a></div>
+        <div class="link">Pas encore inscrit ? <a href="index.php?page=signup">Inscrivez-vous maintenant</a></div>
     </section>
 </div>
 
