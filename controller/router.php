@@ -9,11 +9,10 @@ if (isset($_GET['action'])) {
         case 'displayIndex':
             displayIndex();
             break;
-        // Ajouter d'autres actions au besoin
+
         default:
-            // Gérer les actions par défaut
+
     }
 } else {
-    // Action par défaut
-    // Exemple : header('Location: index.php?action=displayIndex');
+    
 }

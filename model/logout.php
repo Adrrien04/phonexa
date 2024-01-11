@@ -13,7 +13,7 @@ if (isset($_SESSION['unique_id'])) {
         if ($sql) {
             session_unset();
             session_destroy();
-            header("location: ../index.php?page=accueil"); 
+            header("location: ../index.php?page=accueil");
             exit();
         }
     }
