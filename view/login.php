@@ -4,7 +4,7 @@
 <body>
 <div class="wrapper">
     <section class="form login">
-        <header>P H O N E X A</header>
+        <header>    <img src="../model/images/phonexanoir.png" alt="Logo de Phonexa"> </header>
         <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
             <div class="error-text"></div>
             <div class="field input">

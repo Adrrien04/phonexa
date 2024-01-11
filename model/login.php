@@ -1,6 +1,8 @@
 <?php
 session_start();
 include_once "config.php";
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
 
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -27,7 +29,7 @@ if (!empty($email) && !empty($password)) {
                 echo "Connexion échouée, veuillez réessayer";
             }
         } else {
-            echo "Mot de passe incorrect";
+            echo "Mot de passe ou e-mail incorrect.";
         }
     } else {
         echo "$email - Cet e-mail n'existe pas dans notre bdd !";
