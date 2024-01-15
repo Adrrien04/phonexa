@@ -24,7 +24,7 @@ Pour ce faire, faites clique-droit sur le nom de votre base de données et cliqu
 Bravo ! La base de donnée est complète est est désormais prête a être utilisée.
 
 - Modifiez ensuite le fichier ``config.php`` avec les identifiants de connexion de votre base de données.
-En général l'utilisateur est "postgres" et le port 5342 par défaut.
+En général l'utilisateur est "postgres" et le port 5432 par défaut.
 
 ## Démarrage du projet
 - Pour lancer le projet vous devez aller a la racine du projet avec le terminal et faire la commande suivante `` php -S localhost:8000 `` 
@@ -39,6 +39,9 @@ On utilise en général le port 8000
 - Double cliquez sur l'executable ngrok et ensuite écrire dans le terminal qui s'ouvre ``ngrok http 8000``
 
 - Une fois la commande executée il y aura dans le terminal un lien que vous devez Ctrl + Click et le projet se lancera sur internet, vous pouvez ensuite partager ce lien et d'autre personnes pourront y acceder.
+
+## Troubleshooting
+Si vous avez un problème de déconnexion avec "login.php not found" n'hésitez pas à relancer le serveur localhost.
 
 ## Auteurs
 Liste des [contributeurs](https://github.com/Adrrien04/phonexa/graphs/contributors) 
