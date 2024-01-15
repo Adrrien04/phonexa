@@ -14,6 +14,6 @@ CREATE TABLE messages (
                        msg_id int NOT NULL,
                        incoming_msg_id NOT NULL,
                        outgoing_msg_id NOT NULL,
-                       msg varchar(1000) NOT NULL,
+                       msg varchar(1001) NOT NULL,
 
 )
