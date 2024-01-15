@@ -1,3 +1,4 @@
+## premiere partie 
 CREATE TABLE users (
                        users SERIAL PRIMARY KEY,
                        unique_id int NOT NULL,
@@ -9,6 +10,7 @@ CREATE TABLE users (
                        status varchar(255) NOT NULL
 )
 
+## deuxieme partie 
 CREATE TABLE messages (
                        messages SERIAL PRIMARY KEY,
                        msg_id int NOT NULL,
