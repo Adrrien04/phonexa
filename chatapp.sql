@@ -1,6 +1,6 @@
 ## premiere partie 
 CREATE TABLE users (
-                       users SERIAL PRIMARY KEY,
+                       user_id SERIAL PRIMARY KEY,
                        unique_id int NOT NULL,
                        fname varchar(255) NOT NULL,
                        lname varchar(255) NOT NULL,
