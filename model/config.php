@@ -1,9 +1,9 @@
 <?php
-$host = "localhost";
-$port = "5433";
-$dbname = "phonexa";
-$user = "postgres";
-$password = "root";
+$host = "localisation_de_votre_bdd";
+$port = "port_de_votre_bdd";
+$dbname = "nom_de_votre_bdd";
+$user = "utilisateur_postgres";
+$password = "mot_de_passe_postgres";
 
 $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 
