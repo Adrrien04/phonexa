@@ -38,6 +38,6 @@ if(!isset($_SESSION['unique_id'])){
 </div>
 
 <script src="javascript/chat.js"></script>
-
+<?php include_once "view/footer.php"; ?>
 </body>
 </html>

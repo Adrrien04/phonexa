@@ -1,7 +1,7 @@
 
 
 <footer x-data="{ showLinks: false }" class="main-footer" style="background-color: #333; color: #fff; padding: 10px; text-align: center;">
-    <p @click="showLinks = !showLinks" style="cursor: pointer;">Codé avec passion par Adrrien, Oumou, Djibril et Loane &nbsp <-- Cliquez pour découvrir nos pages LinkedIn</p>
+    <p @click="showLinks = !showLinks" style="cursor: pointer;">©Phonexa - 2024 <br> Codé avec passion par Adrrien, Oumou, Djibril et Loane &nbsp <-- Cliquez pour découvrir nos pages LinkedIn</p>
     <div x-show="showLinks" class="linkedin-links">
         <a href="https://www.linkedin.com/in/adrrien-chandrakumar/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> Adrrien</a>
         <a href="https://fr.linkedin.com/in/oumou-keirou-camara-48a960251/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> Oumou</a>
