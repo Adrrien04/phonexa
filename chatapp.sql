@@ -12,8 +12,7 @@ CREATE TABLE users (
 
 ## deuxieme partie 
 CREATE TABLE messages (
-    messages SERIAL PRIMARY KEY,
-    msg_id int NOT NULL,
+    msg_id SERIAL PRIMARY KEY,
     incoming_msg_id int NOT NULL,
     outgoing_msg_id int NOT NULL,
     msg varchar(1000) NOT NULL
