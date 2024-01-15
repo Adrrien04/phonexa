@@ -1,5 +1,5 @@
 # Phonexa
-[![phonexa](https://forthebadge.com/images/badges/check-it-out.svg)](https://sure-tough-snail.ngrok-free.app/) [![forthebadge](https://forthebadge.com/images/badges/powered-by-coders-sweat.svg)](https://forthebadge.com)
+[![phonexa](https://forthebadge.com/images/badges/check-it-out.svg)](https://sure-tough-snail.ngrok-free.app/) [![forthebadge](https://forthebadge.com/images/badges/uses-brains.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
 
 Phonexa est un site web utilisant les technologies PHP, Javascript, Postgres et Alpine qui vous permet d'envoyer des messages entre utilisateurs enregistrés sur le site. L'envoi de message se fait en temps réel et les mot de passes sont stockés de manière sécurisée dans la base de données en utilisant le hashage.
 
