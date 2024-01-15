@@ -1,3 +1,4 @@
+
 <?php
   session_start();
   if(isset($_SESSION['unique_id'])){
@@ -10,4 +11,5 @@
 
   $page = isset($_GET['page']) ? $_GET['page'] : 'accueil';
   getPageContent($page);
+include_once 'view/footer.php';
 ?>

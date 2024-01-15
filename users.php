@@ -37,6 +37,6 @@ if (!isset($_SESSION['unique_id'])) {
 </div>
 
 <script src="javascript/users.js"></script>
-
+<?php include_once "view/footer.php"; ?>
 </body>
 </html>

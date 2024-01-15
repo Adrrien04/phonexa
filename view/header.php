@@ -18,8 +18,9 @@
 </style>
 <body>
 <header class="main-header">
-
+<a href="index.php?page=accueil">
     <img src="../model/images/phonexa.png" alt="Logo de Phonexa">
+</a>
 
     <nav>
         <ul>
